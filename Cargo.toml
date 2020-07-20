@@ -1,0 +1,14 @@
+[package]
+name = "hello-rust"
+version = "0.1.0"
+authors = ["Nelson Baggio <nelson.baggio@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "formatted-print"
+path = "src/formatted-print.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ferris-says = "0.1"
