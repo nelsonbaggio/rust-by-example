@@ -1,7 +1,7 @@
 use std::fmt;
 
 fn main() {
-    #[allow(dead_code)]
+    #[derive(Debug)]
     struct Structure(i32);
 
     impl fmt::Display for Structure {
@@ -10,8 +10,8 @@ fn main() {
         }
     }
 
-    
     println!("My name is {0}, {1} {0}", "Bond", "James");
+    println!("This struct `{:#?}` won't print...", Structure(3));
     println!("This struct `{}` won't print...", Structure(3));
     
     let pi = 3.141592;
